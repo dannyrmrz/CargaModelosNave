@@ -35,7 +35,7 @@ pub fn triangle(v1: &Vertex, v2: &Vertex, v3: &Vertex) -> Vec<Fragment> {
                 let z = p0.z * b0 + p1.z * b1 + p2.z * b2;
                 
                 // Use black color for solid fill
-                let color = crate::color::Color::black();
+                let color = crate::color::Color::new(255, 0, 0);
                 
                 fragments.push(Fragment::new(x as f32, y as f32, color, z));
             }
